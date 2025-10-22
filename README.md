@@ -27,4 +27,4 @@ docker build --platform linux/amd64 -t flightloggernico/myrailsapp:latest .
 docker push flightloggernico/myrailsapp:latest
 
 
-docker run -p 3000:80 -e RAILS_MASTER_KEY=$(cat config/master.key) myrailsapp
+docker run -p 3000:80 -e RAILS_MASTER_KEY=$(cat config/master.key) flightloggernico/myrailsapp:latest
